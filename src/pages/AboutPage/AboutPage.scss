@@ -1,0 +1,65 @@
+@import '@/app/variables.scss';
+
+.about-page {
+    background-color: $primary-color-dark;
+    &__wrapper {
+        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__circle {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        background-color: #FEFF86;
+        margin-left: 68%;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        animation: pulse 5s linear infinite;
+    }
+    &__svg-wrapper {
+        width: 100%;
+        height: 100%;
+        animation: rotateCircle 8.1s linear infinite;
+    }
+    &__svg {
+        position: absolute;
+        top: -4px;
+        animation: bumpyRoad 4s linear infinite;
+    }
+    &__title {
+        max-width: 64%;
+        color: #FEFF86;
+    }
+    &__margin {
+        margin-top: 40px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+@keyframes rotateCircle {
+    from { transform: rotate(-360deg); }
+    to { transform: rotate(0); }
+}
+@keyframes pulse {
+    from { transform: scale(1); }
+    25% { transform: scale(1.1); }
+    50% { transform: scale(1.05); }
+    75% { transform: scale(0.93); }
+    to { transform: scale(1); }
+}
+@keyframes bumpyRoad {
+    from { transform: rotate(-42deg); }
+    30% { transform: rotate(-42deg); }
+    40% { transform: rotate(-38deg); }
+    50% { transform: rotate(-42deg); }
+    55% { transform: rotate(-44deg); }
+    60% { transform: rotate(-42deg); }
+    70% { transform: rotate(-38deg); }
+    80% { transform: rotate(-42deg); }
+    to { transform: rotate(-42deg); }
+}

@@ -1,0 +1,20 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-color: rgba(39, 36, 47, 0.452);
+    z-index: 99999;
+    padding: 14px;
+    backdrop-filter: blur(8px);
+    &__wrapper {
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__links {
+        display: flex;
+        gap: 40px;
+    }
+}

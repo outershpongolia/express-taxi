@@ -1,0 +1,23 @@
+.availability-page {
+    display: flex;
+    align-items: center;
+    &__wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+    &__text-wrapper {
+        height: fit-content;
+        max-width: 720px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+    &__list {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
