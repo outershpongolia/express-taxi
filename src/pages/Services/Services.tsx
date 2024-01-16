@@ -1,23 +1,26 @@
 import React from "react"
-import './ServicesPage.scss'
+import './Services.scss'
 import { ContentWrapper, PageWrapper } from "@/ui/container"
 import { Header1Text } from "@/ui/text"
-import { SERVICES_ARRAY } from "@/constants"
+import { ERoute, SERVICES_ARRAY } from "@/constants"
 import { ServiceCard } from "./ServiceCard/ServiceCard"
 import { uniqueId } from "lodash"
 
-interface IServicesPageProps {}
+interface IServicesProps {}
 
-export const ServicesPage: React.FC<IServicesPageProps> = () => {
+export const Services: React.FC<IServicesProps> = () => {
     return (
-        <PageWrapper className="services-page">
+        <PageWrapper
+            id={ERoute.SERVICES}
+            className="services"
+        >
             <Header1Text
-                className="services-page__title"
+                className="services__title"
                 text='Uslužni horizonti: grad, aerodrom, dostava'
                 type="light"
             />
 
-            <ContentWrapper className="services-page__cards">
+            <ContentWrapper className="services__cards">
                 {SERVICES_ARRAY.map(service => {
                     return (
                         <ServiceCard

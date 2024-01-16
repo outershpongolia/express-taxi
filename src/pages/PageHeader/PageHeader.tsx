@@ -2,12 +2,16 @@ import React from "react"
 import './PageHeader.scss'
 import { PageWrapper, TextWrapper } from "@/ui/container"
 import { Header1Text, Paragraph1Text } from "@/ui/text"
+import { ERoute } from "@/constants"
 
 interface IPageHeaderProps {}
 
 export const PageHeader: React.FC<IPageHeaderProps> = () => {
     return (
-        <PageWrapper className="page-header">
+        <PageWrapper
+            id={ERoute.HEADER}
+            className="page-header"
+        >
             <TextWrapper className="page-header__wrapper">
                 <Header1Text
                     className="page-header__title"

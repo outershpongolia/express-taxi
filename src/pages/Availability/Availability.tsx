@@ -1,18 +1,21 @@
 import React from "react"
-import './AvailabilityPage.scss'
+import './Availability.scss'
 import { ContentWrapper, PageWrapper, TextWrapper } from "@/ui/container"
 import { Header1Text, Paragraph1Text } from "@/ui/text"
-import { AVAILABILITY_CONTENT_ARRAY } from "@/constants"
+import { AVAILABILITY_CONTENT_ARRAY, ERoute } from "@/constants"
 import { AvailabilityItem } from "./AvailabilityItem/AvailabilityItem"
 import { uniqueId } from "lodash"
 
-interface IAvailabilityPageProps {}
+interface IAvailabilityProps {}
 
-export const AvailabilityPage: React.FC<IAvailabilityPageProps> = () => {
+export const Availability: React.FC<IAvailabilityProps> = () => {
     return (
-        <PageWrapper className="availability-page">
-            <ContentWrapper className="availability-page__wrapper">
-                <TextWrapper className="availability-page__text-wrapper">
+        <PageWrapper
+            id={ERoute.AVAILABILITY}
+            className="availability"
+        >
+            <ContentWrapper className="availability__wrapper">
+                <TextWrapper className="availability__text-wrapper">
                     <Header1Text text='Gradski ritam i putevi' />
 
                     <Paragraph1Text
@@ -20,7 +23,7 @@ export const AvailabilityPage: React.FC<IAvailabilityPageProps> = () => {
                     />
                 </TextWrapper>
 
-                <div className="availability-page__list">
+                <div className="availability__list">
                     {AVAILABILITY_CONTENT_ARRAY.map(item => {
                         return (
                             <AvailabilityItem

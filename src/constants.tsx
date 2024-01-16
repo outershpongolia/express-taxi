@@ -5,6 +5,14 @@ import carImage1 from '$/images/car-inside.jpg'
 import carImage2 from '$/images/car2.jpg'
 import carImage3 from '$/images/car3.jpg'
 
+export const enum ERoute {
+    HEADER = '/',
+    ABOUT = 'about',
+    SERVICES = 'services',
+    AVAILABILITY = 'availability',
+    CONTACT = 'contact'
+}
+
 export const AVAILABILITY_CONTENT_ARRAY: IAvailabilityCard[] = [
     {
         title: 'Dostupni gde god da ste',
@@ -45,10 +53,3 @@ export const SERVICES_ARRAY: IServiceCard[] = [
         image: carImage1
     }
 ]
-
-// export const TEXT_CONTENT = [
-//     'Udahni gradsku simfoniju',
-//     'Gradski ritam & putevi',
-//     'Pogledi između gradova',
-//     'Usluge sa dodirom elegancije',
-// ]
