@@ -1,20 +1,20 @@
 .page-header {
-    background: url('../../../public/images/car1.jpg');
-    background-position: center;
-    background-size: cover;
+  background: url('../../../public/images/sombor.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__wrapper {
+    max-width: 64%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 112px 72px;
-    &__wrapper {
-        max-width: 46%;
-        display: flex;
-        justify-content: center;
-        * {
-            max-width: 90%;
-            margin-left: auto;
-        }
-    }
-    &__title {
-        text-transform: uppercase;
-    }
+    text-align: center;
+  }
+  &__title {
+    text-transform: uppercase;
+    font-size: 80px;
+    line-height: 80px;
+  }
 }

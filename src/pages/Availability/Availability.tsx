@@ -9,33 +9,33 @@ import { uniqueId } from "lodash"
 interface IAvailabilityProps {}
 
 export const Availability: React.FC<IAvailabilityProps> = () => {
-    return (
-        <PageWrapper
-            id={ERoute.AVAILABILITY}
-            className="availability"
-        >
-            <ContentWrapper className="availability__wrapper">
-                <TextWrapper className="availability__text-wrapper">
-                    <Header1Text text='Gradski ritam i putevi' />
+  return (
+    <PageWrapper
+      id={ERoute.AVAILABILITY}
+      className="availability"
+    >
+      <ContentWrapper className="availability__wrapper">
+        <TextWrapper className="availability__text-wrapper">
+          <Header1Text text='Gradski ritam i putevi' />
 
-                    <Paragraph1Text
-                        text='Naša usluga čeka u koracima vaše misli, spremna da pretvori želju u stvarnost. Trenutna vožnja - jedan poziv, jedna avantura.'
-                    />
-                </TextWrapper>
+          <Paragraph1Text
+            text='Naša usluga čeka u koracima vaše misli, spremna da pretvori želju u stvarnost. Trenutna vožnja - jedan poziv, jedna avantura.'
+          />
+        </TextWrapper>
 
-                <div className="availability__list">
-                    {AVAILABILITY_CONTENT_ARRAY.map(item => {
-                        return (
-                            <AvailabilityItem
-                                key={uniqueId(item.title)}
-                                title={item.title}
-                                text={item.description}
-                                icon={item.icon}
-                            />
-                        )
-                    })}
-                </div>
-            </ContentWrapper>
-        </PageWrapper>
-    )
+        <div className="availability__list">
+          {AVAILABILITY_CONTENT_ARRAY.map(item => {
+            return (
+              <AvailabilityItem
+                key={uniqueId(item.title)}
+                title={item.title}
+                text={item.description}
+                icon={item.icon}
+              />
+            )
+          })}
+        </div>
+      </ContentWrapper>
+    </PageWrapper>
+  )
 }

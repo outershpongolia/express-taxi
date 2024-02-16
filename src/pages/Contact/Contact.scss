@@ -1,0 +1,22 @@
+@import '@/app/variables.scss';
+
+.contact {
+  &__wrapper {
+    flex-direction: column;
+    gap: 48px;
+    position: relative;
+  }
+  &__title {
+    color: $primary-accent-color;
+    font-size: 48px;
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}

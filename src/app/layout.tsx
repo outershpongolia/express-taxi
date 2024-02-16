@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Montserrat, Playfair_Display } from 'next/font/google'
+import { Montserrat, Noto_Serif } from 'next/font/google'
 import './globals.scss'
 import { Header } from '@/components/Header/Header'
 import clsx from 'clsx'
@@ -9,10 +9,10 @@ export const montserrat = Montserrat({
   display: 'swap',
   variable: '--font-montserrat'
 })
-export const playfair_display = Playfair_Display({
+export const gilda_display = Noto_Serif({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-playfair-display'
+  variable: '--font-gilda-display'
 })
 
 export const metadata: Metadata = {
@@ -27,7 +27,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={clsx(montserrat.variable, playfair_display.variable)}>
+      <body className={clsx(montserrat.variable, gilda_display.variable)}>
         <Header />
         {children}
       </body>

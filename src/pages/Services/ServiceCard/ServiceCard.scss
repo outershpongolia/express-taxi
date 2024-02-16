@@ -1,52 +1,65 @@
 @import '@/app/variables.scss';
 
 .service-card {
-    display: flex;
+  display: flex;
+  padding: 32px;
+  height: 360px;
+  align-items: center;
+  transition: 0.4s all ease-in;
+  &_reversed {
+    flex-direction: row-reverse;
+    .service-card__text-wrapper {
+      padding: 0 0 0 56px;
+      text-align: right;
+      align-items: flex-end;
+    }
+    .service-card__title {
+      &::after {
+        left: auto;
+        right: 0;
+      }
+    }
+  }
+  &_active {
     background-color: $dark-accent-color;
-    border-radius: 24px;
-    padding: 32px;
-    height: 360px;
-    align-items: center;
-    box-shadow: -1px 4px 7px -1px rgba(0,0,0,0.47);
-    transition: 0.2s all ease-out;
-    &:hover {
-        box-shadow: -1px 4px 16px 0px rgba(0,0,0,0.47);
-        transform: scale(1.02);
-        .service-card__title {
-            &::after {
-                width: calc(100% + 4px);
-            }
-        }
+    box-shadow: -1px 4px 16px 0px rgba(0,0,0,0.47);
+    border-radius: 6px;
+    transform: scale(1.02);
+    .service-card__title {
+      &::after {
+        width: calc(100% + 4px);
+      }
     }
-    &__text-wrapper {
-        width: 60%;
-        text-align: left;
-        padding-right: 56px;
+  }
+  &__text-wrapper {
+    width: 60%;
+    text-align: left;
+    padding-right: 56px;
+  }
+  &__title {
+    width: fit-content;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 5px;
+      width: 0px;
+      height: 8px;
+      background: linear-gradient(to top, rgba(254,255,134,1) 16%, rgba(255, 255, 134, 0.942) 32%, rgba(255, 255, 134, 0.844) 58%, rgba(255, 255, 134, 0.641) 100%);
+      z-index: -1;
+      transition: 0.4s all ease-out;
+      mix-blend-mode: darken;
     }
-    &__title {
-        width: fit-content;
-        position: relative;
-        &::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 5px;
-            width: 0px;
-            height: 8px;
-            background: linear-gradient(to top, rgba(254,255,134,1) 16%, rgba(255, 255, 134, 0.942) 32%, rgba(255, 255, 134, 0.844) 58%, rgba(255, 255, 134, 0.641) 100%);
-            z-index: -1;
-            transition: 0.4s all ease-out;
-            mix-blend-mode: darken;
-        }
-    }
-    &__text {
-        max-width: 80%;
-        margin-top: 16px;
-    }
-    &__image {
-        width: 40%;
-        height: 100%;
-        overflow: hidden;
-        border-radius: 16px;
-    }
+  }
+  &__text {
+    max-width: 80%;
+    margin-top: 16px;
+  }
+  &__image {
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 6px;
+  }
 }

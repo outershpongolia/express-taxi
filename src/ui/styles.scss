@@ -1,54 +1,45 @@
 @import '@/app/variables.scss';
 
 .page-wrapper {
-    min-height: calc(100vh + 80px);
-    height: 100%;
-    width: 100%;
-    padding: 192px 72px 112px 72px;
+  min-height: calc(100vh + 80px);
+  height: 100%;
+  width: 100%;
+  padding: 112px 72px;
 }
 .content-wrapper {
-    max-width: 1440px;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
+  max-width: 1440px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
 }
 .text-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 100%;
 }
 .header1-text {
-    font-size: 64px;
-    line-height: 64px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    font-family: $secondary-font;
-    &_light {
-        color: $primary-color-light;
-    }
+  font-size: 64px;
+  line-height: 64px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-family: $secondary-font;
 }
 .header2-text{
-    font-size: 34px;
-    line-height: 46px;
-    font-weight: 600;
-    &_light {
-        color: $primary-color-light;
-    }
+  font-size: 34px;
+  line-height: 46px;
+  font-weight: 600;
 }
 .header3-text {
-    font-size: 22px;
-    font-weight: 500;
+  font-size: 22px;
+  font-weight: 500;
 }
 .paragraph1-text {
-    font-size: 16px;
-    line-height: 24px;
-    &_light {
-        color: $primary-color-light;
-    }
+  font-size: 16px;
+  line-height: 24px;
 }
 .paragraph2-text {
-    font-size: 14px;
-    line-height: 18px;
+  font-size: 14px;
+  line-height: 20px;
 }

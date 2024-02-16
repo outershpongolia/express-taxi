@@ -1,0 +1,13 @@
+.contact-item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-underline-offset: 3px;
+  width: fit-content;
+  &_not-clickable {
+    cursor: none;
+    pointer-events: none;
+    text-decoration: none;
+  }
+}

@@ -9,13 +9,9 @@ export default function LandingPage() {
   return (
     <div className='main'>
       <PageHeader />
-
       <About />
-
       <Services />
-
       <Availability />
-
       <Contact />
     </div>
   )

@@ -6,24 +6,24 @@ import Link from 'next/link'
 import { scrollToSection } from '@/utilities'
 
 interface IHeaderLinkProps {
-    title: string
-    route: ERoute
+  title: string
+  route: ERoute
 }
 
 export const HeaderLink: React.FC<IHeaderLinkProps> = ({ title, route }) => {
-    const handleScroll = useCallback((e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-        e.preventDefault()
+  const handleScroll = useCallback((e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault()
 
-        scrollToSection(route)
-    }, [route])
+    scrollToSection(route)
+  }, [route])
 
-    return (
-        <Link
-            className='header-link'
-            href={route}
-            onClick={handleScroll}
-        >
-            {title}
-        </Link>
-    )
+  return (
+    <Link
+      className='header-link'
+      href={route}
+      onClick={handleScroll}
+    >
+      {title}
+    </Link>
+  )
 }
