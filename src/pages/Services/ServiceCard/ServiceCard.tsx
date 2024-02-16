@@ -10,10 +10,11 @@ interface IServiceCardProps {
   title: string
   description: string
   image: string | StaticImageData
+  imageDesc: string
   reversed?: boolean
 }
 
-export const ServiceCard: React.FC<IServiceCardProps> = ({ title, description, image, reversed }) => {
+export const ServiceCard: React.FC<IServiceCardProps> = ({ title, description, image, imageDesc, reversed }) => {
   const [ isActive, setIsActive ] = useState(false)
 
   const cardRef = useRef<HTMLDivElement>(null)
@@ -58,7 +59,7 @@ export const ServiceCard: React.FC<IServiceCardProps> = ({ title, description, i
       <div className="service-card__image">
         <Image
           src={image}
-          alt=""
+          alt={imageDesc}
           style={{
             width: '100%',
             height: 'auto',

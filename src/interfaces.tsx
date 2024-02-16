@@ -10,4 +10,5 @@ export interface IServiceCard {
   title:        string
   description:  string
   image:        string | StaticImageData
+  imageDesc:    string
 }

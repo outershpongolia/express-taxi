@@ -21,6 +21,7 @@ export const Services: React.FC<IServicesProps> = () => {
               title={service.title}
               description={service.description}
               image={service.image}
+              imageDesc={service.imageDesc}
               reversed={index % 2 !== 0}
             />
           )

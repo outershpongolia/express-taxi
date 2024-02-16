@@ -16,19 +16,19 @@ export const enum ERoute {
 
 export const AVAILABILITY_CONTENT_ARRAY: IAvailabilityCard[] = [
   {
-      title: 'Dostupni gde god da ste',
-      description: 'Bilo da se nalazite u centru grada, na aerodromu ili van urbanog područja, naša mreža pokriva svaki kutak. Bez obzira na lokaciju, naši vozači su spremni da vas prevezu do vaše destinacije.',
-      icon: <GiWorld className='availability-icon availability-icon_world' />
+    title: 'Dostupni gde god da ste',
+    description: 'Bilo da se nalazite u centru grada, na aerodromu ili van urbanog područja, naša mreža pokriva svaki kutak. Bez obzira na lokaciju, naši vozači su spremni da vas prevezu do vaše destinacije.',
+    icon: <GiWorld className='availability-icon availability-icon_world' />
   },
   {
-      title: 'Brzo do vaše vožnje',
-      description: 'Naša brza usluga omogućava vožnju u trenutku kad vam zatreba. Sa samo nekoliko klikova ili pozivom, postajemo vaša vožnja koja stiže munjevitom brzinom.',
-      icon: <BsSpeedometer className='availability-icon availability-icon_speed' />
+    title: 'Brzo do vaše vožnje',
+    description: 'Naša brza usluga omogućava vožnju u trenutku kad vam zatreba. Sa samo nekoliko klikova ili pozivom, postajemo vaša vožnja koja stiže munjevitom brzinom.',
+    icon: <BsSpeedometer className='availability-icon availability-icon_speed' />
   },
   {
-      title: '24/7 brza reakcija',
-      description: 'Naša usluga je dostupna 24 sata dnevno, 7 dana u nedelji. Bez obzira na vreme ili dan, naša flota je spremna da odgovori na vaš poziv za prevoz, čak i u najnepredvidljivijim trenucima.',
-      icon: <GiClockwork className='availability-icon availability-icon_compass' />
+    title: '24/7 brza reakcija',
+    description: 'Naša usluga je dostupna 24 sata dnevno, 7 dana u nedelji. Bez obzira na vreme ili dan, naša flota je spremna da odgovori na vaš poziv za prevoz, čak i u najnepredvidljivijim trenucima.',
+    icon: <GiClockwork className='availability-icon availability-icon_compass' />
   }
 ]
 
@@ -36,22 +36,26 @@ export const SERVICES_ARRAY: IServiceCard[] = [
   {
     title: 'Otkrijte grad u našem taktu',
     description: 'Udobne vožnje koje prate puls grada. Uživajte u vožnji kroz gradske ulice uz naše iskusne vozače i otkrijte sve njegove skrivene dragulje.',
-    image: carImage1
+    image: carImage1,
+    imageDesc: 'Vozac taksija ispred svog auta nasmejan u prirodi'
   },
   {
     title: 'Tarife za vaše avanture',
     description: 'Spojite gradove sa našim povoljnim međugradskim tarifama. Sloboda putovanja na udoban i pouzdan način.',
-    image: carImage2
+    image: carImage2,
+    imageDesc: 'Unutrasnjost taksija sa taksimetrom i radiom'
   },
   {
     title: 'Bez stresa, bez kašnjenja',
     description: 'Vaša udobnost je naš prioritet. Brza i sigurna vožnja do aerodroma, prateći vaše vreme i potrebe.',
-    image: carImage3
+    image: carImage3,
+    imageDesc: 'Crno taksi vozilo na parkingu na periferiji grada pri zalasku Sunca'
   },
   {
     title: 'Vaši paketi, naša briga',
     description: 'Osim putnika, brinemo se i o vašim pošiljkama. Naša efikasna dostava prilagođena je vašim potrebama, pružajući pouzdanu i bezbednu uslugu.',
-    image: carImage4
+    image: carImage4,
+    imageDesc: 'Taksi vozac vozi taksi pri jarkom Suncu'
   }
 ]
 
